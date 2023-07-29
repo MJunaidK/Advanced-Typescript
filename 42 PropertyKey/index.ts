@@ -10,6 +10,10 @@ const valid = {
   [sym]: 'valid',
 };
 
+const xyz = {
+  true: 1,
+};
+
 const obj = {};
 
 const invalid = {

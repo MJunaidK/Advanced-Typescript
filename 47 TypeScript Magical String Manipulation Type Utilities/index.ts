@@ -41,3 +41,8 @@ type Setter<T extends string> = `set${Capitalize<T>}`;
 type name = 'Name';
 type getName = Getter<name>;
 type setName = Setter<name>;
+
+// Other exercise test
+function isString(val: unknown): asserts val is string {
+  console.log(val);
+}

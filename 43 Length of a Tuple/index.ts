@@ -19,10 +19,10 @@ const spaceX = [
 ] as const;
 
 type cases = [
-  Expect<Equal<Length<typeof tesla>, 4>>,
-  Expect<Equal<Length<typeof spaceX>, 5>>,
+  Expect<Equal<Length1<typeof tesla>, 4>>,
+  Expect<Equal<Length1<typeof spaceX>, 5>>,
   //@ts-expect-error
-  Length<5>,
+  Length1<5>,
   //@ts-expect-error
-  Length<'hello-world'>
+  Length1<'hello-world'>
 ];
